@@ -9,7 +9,7 @@ import datetime as dt
 from bokeh.models.widgets import Tabs, Panel
 
 
-dataset = pd.read_csv("dataset.csv")
+dataset = pd.read_csv("data/dataset.csv")
 
 index = dataset[dataset["Location Level"] == "Country"].index
 dataset.drop(index,axis=0,inplace=True)
